@@ -19,7 +19,7 @@ export default function LoginPage(props) {
       url: "http://localhost:5000/login/login",
     }).then((res) => {
       console.log(res);
-      if (res.data === "Successfully Authenticated!") {
+      if (res.data === "Successfully Authenticated") {
         setLoggedIn(true);
       } else {
         alert("Wrong credentials");
